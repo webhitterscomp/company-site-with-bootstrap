@@ -64,6 +64,18 @@ span {
 }
 
 /*=================all hover-class==================== */
+.register-btn{
+    background: #DE3335;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+    .register-btn:hover {
+    background:black !important;
+    color: white;
+    transition: all .3s linear;
+}
+
 .uper-div-link:hover {
     color: #d32f2f !important;
     transition: all .3s linear;
@@ -71,6 +83,44 @@ span {
 
 .read-more-btn:hover {
     background: #DE3335;
+    color: white;
+    transition: all .3s linear;
+}
+
+.btn-div {
+    /* margin-top: 30px; */
+    background: #DE3335;
+    height: 2.4rem;
+    width: 174px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.btn-div:hover {
+    background:black !important;
+    color: white;
+    transition: all .3s linear;
+}
+.send-msg-btn{
+    background: #DE3335;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+.send-msg-btn:hover {
+    background:white ;
+    color: black !important;
+    transition: all .3s linear;
+}
+.View-All-Reviews{
+    background: #DE3335;
+    color: white;
+    border: none;
+
+    border-radius: 15px;
+}
+.View-All-Reviews:hover {
+    background:black !important;
     color: white;
     transition: all .3s linear;
 }
@@ -188,10 +238,10 @@ span {
 
 
 /* ================universal-background-img========================== */
-.for-bg-images {
+/* .for-bg-images {
     background-image: url(./universal-bg-img.jpg);
     background-size: 100% 100%;
-}
+} */
 
 
 
@@ -248,13 +298,14 @@ span {
     position: relative;
 
     min-width: 310px 60px;
-    /* max-width: 310px; */
+    max-width: 310px;
     width: 100%;
     /* height: 100%; */
     color: #ffffff;
     text-align: left;
     background-color: #000000;
     font-size: 16px;
+    margin: auto;
 }
 
 .snip1273 * {
@@ -368,95 +419,46 @@ span {
     width: 100%;
 }
 
-/* .img-of-box {
-    display: flex;
-    margin: 10px 10px;
-    align-items: center;
-    justify-content: center;
-    height: 510px;
-    gap: 20px;
-
-} */
 
 
 .img-box1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
-    /* height: fit-content; */
-    /* width: 100%; */
     font-family: "Poppins", sans-serif;
     text-align: center;
-    /* border: 2px solid black; */
-
 }
 
-
-/* .numberdiv {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
-
-/* .no-for-flex {
-    display: flex;
-} */
-
-/* .for-plus {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.for-plus p {
-    font-size: 1.5rem;
-    margin: 0 5px;
-    color: #fff;
-}
-
-.since-text {
-    color: #f8f9fa;
-}
-
-h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-
-.no1, .no2, .no3, .no4 {
-    ;
-    padding: 10px;
-}
-
-.for-plus h1 {
-    font-size: 1.6rem;
-    margin: 0;
-    font-weight: bold;
-    animation: count-up 2s ease-out forwards;
-} */
-
-/* @keyframes count-up {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.2);
-    }
-} */
-
-/* ===============================bg-img-of-btn==================== */
+/* =============================== bg-img-of-btn ==================== */
 .bg-img-of-btn {
     background-image: url(./Best-SEO-Courses-in-Zirakpur.png);
-    background-size: 100% 100%;
     background-size: cover;
+}
+
+
+.pulse {
+    background: none;
+    --color: white;
+    --hover: #DE3335;
+    color: var(--color);
+    border: 2px solid var(--color);
+    font: inherit;
+    line-height: 1;
+    margin: 0.4em;
+    /* height: 150px; */
+    width: auto;
+    /* min-width: 140px; */
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.25s;
 }
 
 .pulse:hover,
 .pulse:focus {
     animation: pulse 1s;
     box-shadow: 0 0 0 2em transparent;
+    color: #fff;
+    border-color: var(--hover);
 }
 
 @keyframes pulse {
@@ -465,81 +467,35 @@ h3 {
     }
 }
 
-.pulse {
-    --color: white;
-    --hover: #DE3335;
+.enroll-btn {
+    background: #DE3335;
+    width: 150px;
 }
 
+.buttons button {
+    height: 70px;
+    width: 146px;
 
-.button-section1 button {
-    color: var(--color);
-    transition: 0.25s;
+ /* margin: 20px 20px; */
+}
 
-    &:hover,
-    &:focus {
-        border-color: var(--hover);
-        color: #fff;
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .button-section1 {
+        margin-top: 20px;
     }
-}
 
-.button-section1 button {
-    /* background: none; */
-    border: 2px solid;
-    font: inherit;
-    line-height: 1;
-    margin: 0.4em;
-    /* padding: 10px; */
-    height: 73px;
-    width: 140px;
-    padding: 10px 10px;
-    font-weight: bold;
-}
-
-.button-section1 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    /* width: 70%; */
-    /* height: 400px; */
-}
-
-.btn-of-all-div {
-    margin-top: 40px;
-
-
-
-
-
-
+    .pulse {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 
 
 /* ===================amount div=========================== */
 
-.img1-div-of-price {
-    /* position: relative; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* overflow: hidden; */
-    /* max-width: 100%; */
-}
 
-/* .img1-div-of-price img,
-.img-div img {
-    width: fit-content;
-    height: fit-content;
-    object-fit: cover;
-    transition: background-color 0.5s ease-in-out;
 
-} */
-/* 
-.img1-div-of-price img {
-    display: block;
-    max-width: 100%;
-    height: 504px;
-} */
 
 .enrol-button a {
     color: white;
@@ -578,12 +534,12 @@ h3 {
 
 
 /* =========================What Learn SEO====================== */
-    .image-container {
-        overflow: hidden;
-        height: 206px;
-        width: 202px;
-        position: relative;
-    }
+.image-container {
+    overflow: hidden;
+    height: 206px;
+    width: 202px;
+    position: relative;
+}
 
 .image-container img {
     display: block;
@@ -597,10 +553,19 @@ h3 {
 
 
 /* ================slider======================= */
-.newslider {
-    width: 173px !important;
+/* Image styling */
 
+
+/* Bootstrap's rounded class applies border-radius */
+.rounded {
+    border-radius: 15px;
 }
+
+/* Bootstrap's shadow class applies box-shadow */
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 
 
@@ -632,15 +597,400 @@ h3 {
     position: relative;
     width: 100%;
     /* padding-top: 56.25%; */
-  }
-  .img-container img {
+}
+
+.img-container img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Scale the image to cover the container */
-  } 
+    object-fit: cover;
+    /* Scale the image to cover the container */
+}
+
+
+
+
+
+
+
+
+/* ============================girls section-================= */
+/* General Image Styling */
+
+
+/* Ensure images fit within their container */
+.img-fluid {
+    /* max-width: 100%; */
+    /* height: auto; */
+}
+
+/* Animation for scrolling effect */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ====================review section==================*/
+
+
+.main-section-of-company-review {
+    margin-top: 47px;
+    max-height: fit-content;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 1140px;
+}
+
+.img-of-review-section-main {
+    padding: 20px 10px;
+}
+
+.img-of-pic {
+    display: block;
+    margin-top: -50px;
+}
+
+.img-of-company-review {
+    text-align: center;
+    /* height: 600px; */
+    width: 49%;
+    margin-left: 44px;
+    /* width: 634px; */
+}
+
+.img-of-company-review h2 {
+    margin-bottom: 25px;
+}
+
+.img-of-company-review h3 {
+    margin-top: 17px;
+}
+
+.review-of-company {
+    gap: 10px;
+    display: flex;
+}
+
+.review-images-of-google-justdial-fb {
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* margin-right: 10px; */
+    border-radius: 10px;
+    gap: 10px;
+}
+
+
+
+.review {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    overflow: hidden;
+    flex-direction: column; */
+
+    /* width: 100%; */
+
+}
+
+/* .slider-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1140px;
+    overflow: hidden;
+
+} */
+
+/* 
+.slider-container {
+    display: flex;
+    position: relative;
+    margin-top: 30px;
+    max-width: 1140px;
+     max-width: 1140px;   
+     overflow: hidden; 
+} */
+
+.snip1139 {
+    margin-top: 50px;
+    height: fit-content;
+    position: relative;
+    overflow: visible;
+    margin: 10px;
+    max-height: 400px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+
+}
+
+.snip1139:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.snip1139 img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 72px;
+}
+
+.snip1139:hover img {
+    transform: scale(1.2);
+}
+
+.snip1139 blockquote {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 25px 50px 25px 50px;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    line-height: 1.6em;
+    font-style: italic;
+    height: 250px;
+    width: 350px;
+}
+
+.snip1139 blockquote:before,
+.snip1139 blockquote:after {
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+}
+
+.snip1139 blockquote:before {
+    top: 25px;
+    left: 20px;
+}
+
+.snip1139 blockquote:after {
+    content: "\201D";
+    right: 20px;
+    bottom: 0;
+}
+
+.snip1139 .arrow {
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #f4f4f4;
+    margin: 0;
+    position: absolute;
+}
+
+.snip1139 .author {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 25px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.snip1139 .author h5 {
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 800;
+}
+
+.snip1139 .author h5 span {
+    font-weight: 400;
+    text-transform: none;
+    padding-left: 5px;
+}
+
+
+/* =================================img-animation================ */
+
+.gallery {
+    margin-top: 10px;
+    display: grid;
+    max-width: 90%  ;
+    height: 80%;
+}
+
+.gallery>img {
+    display: grid;
+    grid-area: 9/1;
+    width: 90%;
+    height: 80%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 10px solid #f2f2f2;
+    box-shadow: 0 0 4px #0007;
+    animation: slide 16s infinite;
+    /* z-index: 0; */
+}
+
+.gallery>img:last-child {
+    animation-name: slide-last;
+}
+
+.gallery>img:nth-child(2) {
+    animation-delay: -2s;
+}
+
+.gallery>img:nth-child(3) {
+    animation-delay: -4s;
+}
+
+.gallery>img:nth-child(4) {
+    animation-delay: -6s;
+}
+
+.gallery>img:nth-child(5) {
+    animation-delay: -8s;
+}
+
+.gallery>img:nth-child(6) {
+    animation-delay: -10s;
+}
+
+.gallery>img:nth-child(7) {
+    animation-delay: -12s;
+}
+
+.gallery>img:nth-child(8) {
+    animation-delay: -14s;
+}
+
+.gallery>img:nth-child(9) {
+    animation-delay: -16s;
+}
+
+.gallery>img:nth-child(10) {
+    animation-delay: -18s;
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+        z-index: 2;
+    }
+
+    16.66% {
+        transform: translateX(120%);
+        z-index: 2;
+    }
+
+    16.67% {
+        transform: translateX(120%);
+        z-index: 1;
+    }
+
+    33.34% {
+        transform: translateX(0%);
+        z-index: 1;
+    }
+
+    66.33% {
+        transform: translateX(0%);
+        z-index: 1;
+    }
+
+    66.34% {
+        transform: translateX(0%);
+        z-index: 2;
+    }
+
+    100% {
+        transform: translateX(0%);
+        z-index: 2;
+    }
+}
+
+@keyframes slide-last {
+    0% {
+        transform: translateX(0%);
+        z-index: 2;
+    }
+
+    16.66% {
+        transform: translateX(120%);
+        z-index: 2;
+    }
+
+    16.67% {
+        transform: translateX(120%);
+        z-index: 1;
+    }
+
+    33.34% {
+        transform: translateX(0%);
+        z-index: 1;
+    }
+
+    83.33% {
+        transform: translateX(0%);
+        z-index: 1;
+    }
+
+    83.34% {
+        transform: translateX(0%);
+        z-index: 2;
+    }
+
+    100% {
+        transform: translateX(0%);
+        z-index: 2;
+    }
+}
+
+/* ===================question and ans===================== */
+.card-header {
+    background-color: #f8f5f4;
+    border: 1px solid #d5d8dc;
+}
+
+.btn-link {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+.card-body {
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -652,13 +1002,24 @@ h3 {
         font-size: small;
 
     }
+
     .review-img {
         width: 100px;
     }
+
     .review-img img {
-        width:100px !important;
+        width: 100px !important;
         height: auto;
         flex-shrink: 0;
-    
+
+    }
+
+    .snip1139 blockquote {
+        padding: 15px;
+        font-size: 0.7em;
+        width: 200px;
     }
 }
+
+
+/* transform: translate(-50%, -50%); */
