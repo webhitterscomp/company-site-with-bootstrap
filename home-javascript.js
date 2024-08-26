@@ -220,3 +220,21 @@ questions.forEach((question, index) => {
     }
   });
 }); 
+// ==================pop-up-form==============
+function showPopup() {
+  const popup = document.getElementById('popup1');
+  popup.style.display = 'flex';
+  popup.classList.add('show');
+}
+
+function closePopup() {
+  const popup = document.getElementById('popup1'); 
+  popup.classList.remove('show');
+  setTimeout(() => {
+    popup.style.display = 'none'; 
+  }, 300);
+} 
+//  console.log(Date())
+setTimeout(showPopup, 10000);
+
+

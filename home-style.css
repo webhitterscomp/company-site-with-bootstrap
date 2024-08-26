@@ -71,6 +71,7 @@ span {
     border-radius: 15px;
 }
 
+
 .register-btn:hover {
     background: black !important;
     color: white;
@@ -128,6 +129,23 @@ span {
 .View-All-Reviews:hover {
     background: black !important;
     color: white;
+    transition: all .3s linear;
+}
+
+.popup-left button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #DE3335;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup-left button:hover {
+    background: #000;
+    color: white;
+    cursor: pointer;
     transition: all .3s linear;
 }
 
@@ -196,7 +214,7 @@ span {
 
     /* color: #000000;  */
     /* background-color: linear-gradient(45deg, #fd5c63, #f7c325, #8a3ab9); */
-    color: #d6249f;
+    color: #d6249f !important;
 }
 
 .twittericonimg:hover {
@@ -206,16 +224,21 @@ span {
 
 }
 
+.twittericonimg-bottom {
+    fill: #fff !important;
+}
+
 .social-icons .social-icon-item:nth-child(5) .social-icon:hover {
     color: #e4405f !important;
     /* Instagram color */
 }
 
-/* =====================number-div===================== */
-.main-number-section-of-hero {
-
-    margin-top: 10px !important;
+#bottom-icon-id {
+    color: #fff;
 }
+
+/* =====================number-div===================== */
+
 
 
 .number-section-of-hero {
@@ -235,12 +258,12 @@ span {
     cursor: default;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .main-number-section-of-hero {
 
         margin-top: 100px !important;
     }
-}
+} */
 /* ==================courses-section================================ */
 .course-box img {
     border-radius: 10px;
@@ -262,6 +285,7 @@ span {
     font-weight: bolder;
     font-size: 30px;
 }
+
 .read-more-btn {
 
     background: #000;
@@ -393,6 +417,7 @@ span {
 .snip1273.hover:after {
     width: 100%;
 }
+
 /* =============================== bg-img-of-btn ==================== */
 .bg-img-of-btn {
     background-image: url(./Best-SEO-Courses-in-Zirakpur.png);
@@ -473,6 +498,7 @@ span {
     color: white;
     border-color: white;
 }
+
 /* =========================What Learn SEO====================== */
 .image-container {
     overflow: hidden;
@@ -489,6 +515,7 @@ span {
 .image-container:hover img {
     transform: scale(1.1);
 }
+
 /* ================slider======================= */
 @keyframes scroll2 {
     0% {
@@ -499,6 +526,7 @@ span {
         transform: translateX(-100%);
     }
 }
+
 /* ============================girls section-================= */
 @keyframes scroll1 {
     0% {
@@ -615,6 +643,7 @@ span {
     text-transform: none;
     padding-left: 5px;
 }
+
 /* =================================img-animation================ */
 .gallery {
     margin-top: 10px;
@@ -674,6 +703,7 @@ span {
 .gallery>img:nth-child(10) {
     animation-delay: -18s;
 }
+
 @keyframes slide {
     0% {
         transform: translateX(0%);
@@ -758,9 +788,11 @@ span {
     color: #000;
     text-decoration: none;
 }
+
 .card-body {
     background-color: #ffffff;
 }
+
 /* =======================video section=========================== */
 .video-wrapper {
     position: absolute;
@@ -768,16 +800,18 @@ span {
     top: 157px;
     left: 124px;
 
+    /* border-radius: 50%;/ */
 }
 
-.vdo-class1 {
-    border-radius: 50%;
+/* {
+   
     height: 180px;
     width: 180px;
-    transform: translate(-50%, -50%);
+   
     position: relative;
-}
+} */
 
+.vdo-class1,
 .vdo-class2,
 .vdo-class3,
 .vdo-class4,
@@ -787,12 +821,14 @@ span {
     position: relative;
     border-radius: 50%;
     height: 102px;
-    width: 134px;
-    transform: translate(-50%, -50%);
+    /* width: 134px; */
+    border-radius: 50%;
+    /* transform: translate(-50%, -50%); */
 }
 
 .vdo-class2 {
     width: 50px;
+    /* display: block; */
 }
 
 .video-wrapper:nth-child(2) {
@@ -800,15 +836,10 @@ span {
     left: -37px;
     top: 133px;
 }
-
-.vdo-class6 {
-    width: px;
-}
-
 .video-wrapper:nth-child(3) {
     transform: rotate(102.86deg) translate(0, -200px) rotate(-102.86deg);
-    top: 20px;
-    left: 50px;
+    top: 5px;
+    left: 48px;
 }
 
 .video-wrapper:nth-child(4) {
@@ -834,11 +865,193 @@ span {
     top: 162px;
 }
 
+/* ===========================pop-up-form=================== */
+
+
+.title {
+    color: #d32f2f;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    /* margin-top: 30px; */
+    text-align: center;
+}
+
+.subtitle {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input-group {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.input-firstname {
+    margin-top: 30px;
+}
+
+.input-lastname {
+    margin-top: 30px;
+}
+
+.input-email {
+    margin-top: 30px;
+}
+
+.input-field {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.input-cut {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 50px;
+}
+
+.input-cut-short {
+    width: 68px;
+
+}
+
+.input-field:focus~.input-cut,
+.input-field:not(:placeholder-shown)~.input-cut {
+    transform: translateY(8px);
+}
+
+.input-label {
+    color: #999;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 15px;
+}
+
+.input-field:focus~.input-label,
+.input-field:not(:placeholder-shown)~.input-label {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input-field:not(:placeholder-shown)~.input-label {
+    color: #555;
+}
+
+.input-field:focus~.input-label {
+    color: #d32f2f;
+}
+
+.submit-button {
+    
+
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 38px;
+    text-align: center; 
+
+}
+
+.submit-button:active {
+    background-color: #b71c1c;
+}
+
+
+
+.popup.show {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.popup-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.popup-left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-left label {
+    margin-top: 10px;
+}
+
+.popup-left input,
+.popup-left textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 
 @media (max-width: 600px) {
     .text-size-small {
         font-size: small;
-
+    }
+    .heading-size-small{
+        font-size: medium;
     }
 
     .review-img {
@@ -849,7 +1062,6 @@ span {
         width: 100px !important;
         height: auto;
         flex-shrink: 0;
-
     }
 
     .snip1139 blockquote {
@@ -857,6 +1069,7 @@ span {
         font-size: 0.7em;
         width: 200px;
     }
+
     .button-section1 {
         margin-top: 20px;
     }
@@ -866,18 +1079,29 @@ span {
         max-width: 300px;
     }
 
-   
+    .remove-postion {
+        top: 27px;
+        left: 0px;
+    }
+
+    .remove-postion-of-number-section {
+        top: 0px !important;
+    }
+
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
 
     .video-div {
-        height: 500px;
-        /* transform: translate(-50%, -50%); */
+        height: 400px;
+        /* margin: auto */
+        
 
     }
 
-
+    .remove-postion {
+        bottom: 15px !important;
+    }
 }
 
 
