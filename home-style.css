@@ -836,6 +836,7 @@ span {
     left: -37px;
     top: 133px;
 }
+
 .video-wrapper:nth-child(3) {
     transform: rotate(102.86deg) translate(0, -200px) rotate(-102.86deg);
     top: 5px;
@@ -965,14 +966,14 @@ span {
 }
 
 .submit-button {
-    
+
 
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
     margin-top: 38px;
-    text-align: center; 
+    text-align: center;
 
 }
 
@@ -1050,7 +1051,8 @@ span {
     .text-size-small {
         font-size: small;
     }
-    .heading-size-small{
+
+    .heading-size-small {
         font-size: medium;
     }
 
@@ -1093,9 +1095,9 @@ span {
 @media (max-width: 1000px) {
 
     .video-div {
-        height: 400px;
+      
         /* margin: auto */
-        
+
 
     }
 
