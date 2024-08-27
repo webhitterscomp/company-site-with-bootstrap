@@ -14,6 +14,7 @@ span {
 /* ================apply-job-btn====================== */
 .apply-job {
 
+
     background-image: linear-gradient(to right, #AE1100, white);
     background-size: 200% 100%;
     background-position: -100%;
@@ -527,7 +528,7 @@ span {
     }
 }
 
-/* ============================girls section-================= */
+/* ============================girls section-alider================= */
 @keyframes scroll1 {
     0% {
         transform: translateX(0);
@@ -1092,13 +1093,13 @@ span {
 
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
 
-    .video-div {
-      
-        /* margin: auto */
-
-
+    /* .video-div {
+        min-height:400px ;
+    } */
+    .bg-img-of-btn{
+        background-image: url(./Best-Digital-Marketing-Training-in-Dera-Bassi.jpg);
     }
 
     .remove-postion {

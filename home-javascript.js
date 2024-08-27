@@ -211,7 +211,7 @@ const answers = document.querySelectorAll('.first-question2');
 
 questions.forEach((question, index) => {
   question.addEventListener('click', function () {
-    const answer = answers[index];
+    const answer =  [index];
     if (answer.classList.contains('show')) {
       answer.classList.remove('show');
     } else {
